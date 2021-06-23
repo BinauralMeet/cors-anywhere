@@ -28,7 +28,7 @@
     "server.js"
   ],
   "dependencies": {
-    "http-proxy": "1.11.1",
+    "http-proxy": "1.18.1",
     "proxy-from-env": "0.0.1"
   },
   "devDependencies": {
@@ -43,7 +43,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha ./test/test*.js --reporter spec",
-    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec",
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=0.10.0"
